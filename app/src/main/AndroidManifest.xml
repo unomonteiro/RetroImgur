@@ -30,7 +30,7 @@
 
                 <data
                     android:scheme="https"
-                    android:host="redirecturl"
+                    android:host="monteirodev"
                     android:port="88"
                     android:pathPattern="/.*"/>
             </intent-filter>
