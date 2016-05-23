@@ -89,13 +89,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             OAuthUtil.set(OAuthUtil.REFRESH_TOKEN, temp.getQueryParameter(OAuthUtil.REFRESH_TOKEN));
             OAuthUtil.set(OAuthUtil.ACCOUNT_USERNAME, temp.getQueryParameter(OAuthUtil.ACCOUNT_USERNAME));
 
-            /*if (OAuthUtil.isAuthorized()) {
+            if (OAuthUtil.isAuthorized()) {
                 toolbar.setTitle(OAuthUtil.get(OAuthUtil.ACCOUNT_USERNAME));
                 showAccountImages();
             } else {
                 toolbar.setTitle("Login");
                 showLoginOrAnon();
-            }*/
+            }
             showLoginOrAnon();
         }
     }
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         accountImagesContainer.setVisibility(View.VISIBLE);
         signInBtn.setVisibility(View.GONE);
-        uploadAnon.setVisibility(View.GONE);
+        //uploadAnon.setVisibility(View.GONE);
     }
 
     @Override
